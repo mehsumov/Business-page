@@ -1,0 +1,427 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    padding: 0 100px;
+
+
+}
+
+.btn {
+    font-size: 1.5rem;
+    background-color: #5385c1;
+    color: white;
+    padding: 10px 22px;
+    display: inline-block;
+    transition: background 0.3s;
+
+}
+
+.btn:hover {
+    background-color: #6692C8;
+}
+
+.mx {
+    margin: 0 20px;
+}
+
+/*Banner*/
+
+#banner {
+    width: 100%;
+    height: 450px;
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+
+}
+
+.banner-text {
+
+    width: 100%;
+    text-align: center;
+
+}
+
+.banner-text h1 {
+    font-size: 5.1rem;
+    font-weight: 100;
+}
+
+.banner-text p {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, .55);
+    padding-top: 3.5rem;
+}
+
+.header {
+
+    width: 100%;
+    padding-top: 6rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+
+}
+
+.nav-menu {
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav-menu li {
+    padding: 0 1rem;
+}
+
+.nav-menu li a {
+    color: #d4e0ef;
+    font-size: 1.2rem;
+}
+
+/*Section A*/
+#sectionA {
+    padding: 75px 0;
+
+}
+
+
+
+.flexbox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+#sectionA .flexbox .col {
+
+    padding-right: 50px;
+    border-right: 1px solid #dbdbdb;
+    width: 30%;
+
+
+}
+
+.flexbox .col-3 {
+    border: none;
+}
+
+.flexbox .card-title {
+    font-size: 2rem;
+    color: #5385c1;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.flexbox .card-text {
+    font-size: 1.5rem;
+    color: #9a9a9a;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+/*Section B*/
+
+
+#sectionB {
+    padding: 75px 0;
+    background-color: #5385C1;
+    text-align: center;
+    color: #fff;
+
+}
+
+ .main-text h2 {
+    font-size: 4rem;
+    font-weight: 100;
+
+}
+
+.main-text p {
+    font-size: 1.4rem;
+    font-weight: 100;
+    padding: 20px 0;
+}
+
+.card {
+    border: 1px solid rgba(255, 255, 255, .25);
+    margin-top: 4rem;
+    padding: 5rem 3rem;
+    width: 20%;
+
+
+}
+
+.card .name {
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 2rem 0;
+}
+
+.card .description {
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+.card .profile img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+/*Section C*/
+
+#sectionC {
+    padding: 75px 0;
+    text-align: center;
+    color: #5385c1;
+}
+
+#sectionC .col {
+
+    width: 47%;
+
+}
+
+#sectionC .col {
+    text-align: left;
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+#sectionC .text{
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #9a9a9a;
+    line-height: 1.8;
+}
+
+/*Footer*/
+
+footer {
+    padding: 40px 0;
+    border-top: 1px solid #dbdbdb;
+}
+
+.social ul {
+    display: flex;
+}
+
+.social ul a {
+    color: #5385C1;
+    font-size: 1.6rem;
+    padding-left: 20px;
+    display: inline-block;
+
+}
+
+
+.copyright p {
+    font-size: 1.2rem;
+    color: #bbbbbb;
+}
+
+@media screen and (max-width:980px) {
+
+    #sectionA {
+        padding: 40px 0;
+    }
+
+
+
+    #sectionA .flexbox .col {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #dbdbdb;
+        padding-bottom: 40px;
+        padding-top: 10px;
+        padding-right: 0;
+    }
+
+
+
+    #sectionB .card {
+        width: 47%;
+    }
+
+    .card .profile img {
+        width: 50%;
+    }
+
+    .container {
+        padding: 0 50px;
+    }
+
+    #sectionC {
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+
+    #sectionC .col {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+
+}
+
+
+@media screen and (max-width:736px) {
+    footer {
+        padding: 0;
+        height: 100px
+    }
+
+    footer .flexbox {
+        height: 150px;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    #sectionA,
+    #sectionC .col {
+        text-align: center;
+    }
+
+
+    #sectionB .card {
+        width: 100%;
+    }
+
+    footer {
+        padding: 0;
+        height: 100px
+    }
+
+    footer .flexbox {
+        height: 150px;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+
+    }
+
+
+
+}
+
+/*Generic*/
+
+
+/*Navbar*/
+
+.navbar{
+    background-color: #5385C1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+   
+    
+    
+}
+.gen-c{
+    margin-top: 45px;
+    
+}
+
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item{
+    display: flex;
+    
+    
+}
+
+.nav-link{
+    color: #d4e0ef;
+    font-size: 1.2rem;
+}
+.nav-item li{
+    padding: 1.5rem 1rem;
+}
+
+
+/*SectionD*/
+
+#sectionD{
+    padding-top: 150px;
+}
+
+#sectionD .header-text{
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+#sectionD .header-text h2{
+    font-size: 4rem;
+    font-weight: 100;
+    color: #5385c1;
+    margin-bottom: 20px;    
+}
+
+
+#sectionD .header-text p{
+    font-size: 1.4rem;
+    color: #bbbbbb;
+}
+
+#sectionD .main-text h2{
+    font-size: 2.5rem;
+    color: #5385c1;
+    margin-bottom: 25px;
+}
+
+#sectionD .main-text p{
+    font-size: 1.5rem;
+    color: #9a9a9a;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
